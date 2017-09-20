@@ -7,33 +7,7 @@ Technique is brute-force.
 
 
 import time
-start =  time.time()
-def sieveOfSundaram(number):
-  """
-  SOS ia an algorithm to calculate all the primes below
-  a given value.
-  """
-  nNew = int((number -2) / 2)
-  
-  marked = [0] * number
-  primes = []
-  
-  
-  for i in range (1, nNew):
-      j = i
-      while i + j + (2*i*j) <= nNew:
-          marked[i + j + (2*i*j)] = 1
-          j += 1
-  if number > 2:
-    primes.append(2)
-          
-  for i, value in enumerate(marked):
-    if i < nNew:
-      if not value:
-          primes.append(2*i + 1)
-  
-  return primes
-  
+start =  time.time() 
   
 def numberOfPrimeFactors(number):
     i = 2
@@ -47,8 +21,7 @@ def numberOfPrimeFactors(number):
     if number > 1:
         factors.append(number)
     return len(set(factors))
-  
-primeList = sieveOfSundaram(100000)
+
 result = 2 * 3 * 5 * 7
 consec = 1
 
