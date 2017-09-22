@@ -1,3 +1,10 @@
+"""
+1. Generate all primes between 1000 - 9999.
+2. In the above list check if the valies i+3330,  i + 6660 is present
+3. check if i + 3330, i + 6660 are permutations of i
+Execution time  -  0.0285
+"""
+
 import time
 import itertools
 start =  time.time()
