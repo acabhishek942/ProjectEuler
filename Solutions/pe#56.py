@@ -12,13 +12,6 @@ def getDigitSum(number):
     digitSum += number % 10
     number //=  10
   return digitSum
-  
-# for i in range(99, 1, -1):
-#   for j in range(99, 1, -1):
-#     testNumber = i ** j
-#     digitalSum = getDigitSum(i ** j)
-#     if digitalSum > maxDigitSum:
-#       maxDigitSum = digitalSum
 
 for i in range(100):
   for j in range(100):
