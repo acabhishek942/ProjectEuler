@@ -1,3 +1,9 @@
+"""
+Use the continued fraction expression algo.
+Approach and code referenced from mathblog anf dreamshire.
+Execution time - 0.1445
+"""
+
 import time 
 start = time.time()
 import math
